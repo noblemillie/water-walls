@@ -11,9 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Water Walls</h1>
         </header>
-        <body>
-          <Waterfalls />
-        </body>
+        <Waterfalls />
       </div>
     );
   }
