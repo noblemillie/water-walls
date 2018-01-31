@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import App from './App'
+import App from './App.js'
 
-class Waterfalls extends App {
+class Waterfalls extends Component {
 
 
   render() {
@@ -10,7 +10,7 @@ class Waterfalls extends App {
         <header className="Waterfalls-header">
         </header>
         <body>
-
+          <p>Waterfalls is here too</p>
         </body>
       </div>
     );
