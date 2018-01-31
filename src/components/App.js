@@ -11,9 +11,13 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Water Walls</h1>
         </header>
+<<<<<<< HEAD
+        <Waterfalls />
+=======
         <body>
           <Waterfalls />
         </body>
+>>>>>>> bdf9e4c2acaab945a7344e006f2573e17454a524
       </div>
     );
   }
