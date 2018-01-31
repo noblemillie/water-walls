@@ -8,12 +8,14 @@ class Waterfalls extends Component {
       height: 2
     };
   }
-import App from './App.js'
 
-class Waterfalls extends Component {
+  handleChange(event) {
+    this.setState({height: event.target.value});
+  }
 
   handleClick(event) {
-    this.setState({height: event.target.value});
+    var joined = this.state.walls.concat(Number(this.state.height));
+    this.setState({ walls: joined })
     event.preventDefault();
   }
 
@@ -25,7 +27,7 @@ class Waterfalls extends Component {
         <form onSubmit={(e) => {this.handleClick(e)}}>
           <label>
             Add a wall
-            <input type="text" max="10" required />
+            <input type="text" max="10" onChange={(e) => {this.handleChange(e)}} required />
             <input type="submit" value="Add"/>
           </label>
         </form>
