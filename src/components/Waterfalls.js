@@ -8,6 +8,9 @@ class Waterfalls extends Component {
       height: 2
     };
   }
+import App from './App.js'
+
+class Waterfalls extends Component {
 
   handleClick(event) {
     this.setState({height: event.target.value});
