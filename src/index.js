@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import "./App.css";
-import registerServiceWorker from './registerServiceWorker';
+import "./index.css";
+import WaterWalls from './WaterWalls';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+var destination = document.querySelector("#root");
+
+ReactDOM.render(
+    <div>
+      <WaterWalls/>
+    </div>,
+    destination
+);
