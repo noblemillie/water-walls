@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Waterfalls extends Component {
+class AddWallForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,8 +21,8 @@ class Waterfalls extends Component {
 
   render() {
     return (
-      <div className="Waterfalls">
-        <header className="Waterfalls-header">
+      <div className="AddWallForm">
+        <header className="AddWallForm-header">
         </header>
         <form onSubmit={(e) => {this.handleClick(e)}}>
           <label>
@@ -36,4 +36,4 @@ class Waterfalls extends Component {
   }
 }
 
-export default Waterfalls;
+export default AddWallForm;

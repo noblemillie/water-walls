@@ -1,11 +1,15 @@
 // const wallHeights = [5, 3, 7, 2, 6, 4, 5, 9, 1, 0, 8, 0];
 const matrixHeight = wallHeights.length;
 const maxHeight = Math.max(...wallHeights) - 1;
-import wallHeights from ('../Waterfall') 
+import wallHeights from ('../Waterfall')
+
+
 
 export default openAir = wallHeights.map((elem) => {
   return maxHeight - elem;
 })
+
+
 
 export default matrixBuilder = (array, height, output = []) => {
   let line = [];
@@ -48,7 +52,3 @@ export default fillMatrix = (matrix) => {
   }
   return matrix;
 }
-
-
-
-export default matrix1 = matrixBuilder(openAir, matrixHeight);
